@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Consultor A.H.</title>
+    <link rel="icon" href="./Sources/logo.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <img src="./Sources/logo.jfif" alt="Logo de la empresa">
+            </div>
+        </a>
+           <div class="title">
+            <h1 class="merriweather-black-italic">Grupo Consultor A.H.</h1>
+        </div>
+        <div class="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                &#9776;
+            </label>
+            <nav class="menu-items">
+                <a href="./About.html">Sobre Nosotros</a>
+                <a href="./Client.html">Usuario</a>
+                <a href="./Contact.html">Contactanos</a>
+            </nav>
+        </div>
+    </header>
+    <section class="carousel-container">
+        <div class="carousel">
+            <div class="slide">
+                <img src="./Sources/legal4.webp" alt="Imagen 1">
+                <div class="caption">
+                    <span class="latin-phrase">"Lex semper dabit remedium."</span>
+                    <span class="translation">"La ley siempre ofrecerá una solución."</span>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./Sources/legal0.webp" alt="Imagen 2">
+                <div class="caption">
+                    <span class="latin-phrase">"In justo, fiducia."</span>
+                    <span class="translation">"En la justicia, confianza."</span>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./Sources/legal9.webp" alt="Imagen 3">
+                <div class="caption">
+                    <span class="latin-phrase">"Servare legem est servare ius."</span>
+                    <span class="translation">"Guardar la ley es proteger el derecho."</span>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+    </section>
+    <br>
+    <section class="services">
+        <div class="service-card">
+            <h2>Servicio 1</h2>
+            <p>Descripción breve del primer servicio que ofrecemos.</p>
+        </div>
+        <div class="service-card">
+            <h2>Servicio 2</h2>
+            <p>Descripción breve del segundo servicio que ofrecemos.</p>
+        </div>
+        <div class="service-card">
+            <h2>Servicio 3</h2>
+            <p>Descripción breve del tercer servicio que ofrecemos.</p>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section class="review-carousel-container">
+        <button class="review-carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="review-carousel">
+            <div class="review-carousel-inner">
+                <div class="review-carousel-item">
+                    <img src="https://via.placeholder.com/100" alt="Persona 1" class="profile-img">
+                    <p class="name">Persona 1</p>
+                    <p class="review">¡Excelente servicio!</p>
+                </div>
+                <div class="review-carousel-item">
+                    <img src="https://via.placeholder.com/100" alt="Persona 2" class="profile-img">
+                    <p class="name">Persona 2</p>
+                    <p class="review">Muy satisfecho con el producto.</p>
+                </div>
+                <div class="review-carousel-item">
+                    <img src="https://via.placeholder.com/100" alt="Persona 3" class="profile-img">
+                    <p class="name">Persona 3</p>
+                    <p class="review">Altamente recomendable.</p>
+                </div>
+                <div class="review-carousel-item">
+                    <img src="https://via.placeholder.com/100" alt="Persona 4" class="profile-img">
+                    <p class="name">Persona 4</p>
+                    <p class="review">Atención al cliente de primera.</p>
+                </div>
+                <div class="review-carousel-item">
+                    <img src="https://via.placeholder.com/100" alt="Persona 5" class="profile-img">
+                    <p class="name">Persona 5</p>
+                    <p class="review">La calidad supera mis expectativas.</p>
+                </div>
+                <div class="review-carousel-item">
+                    <img src="https://via.placeholder.com/100" alt="Persona 6" class="profile-img">
+                    <p class="name">Persona 6</p>
+                    <p class="review">Un gran hallazgo.</p>
+                </div>
+                <div class="review-carousel-item">
+                    <img src="https://via.placeholder.com/100" alt="Persona 7" class="profile-img">
+                    <p class="name">Persona 7</p>
+                    <p class="review">El mejor en su categoría.</p>
+                </div>
+                <div class="review-carousel-item">
+                    <img src="https://via.placeholder.com/100" alt="Persona 8" class="profile-img">
+                    <p class="name">Persona 8</p>
+                    <p class="review">Una experiencia muy positiva.</p>
+                </div>
+            </div>
+        </div>
+        <button class="review-carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+<footer class="footer">
+    <a href="index.html">
+    <div class="footer-logo left-logo">
+        <img src="./Sources/logo.jfif" alt="Logo Izquierdo">
+    </div>
+    </a>
+    <div class="footer-text">
+        <p>&copy; <span class="year"></span> Grupo Consultor A.H. Todos los derechos reservados.</p>
+    </div>
+    <a href="https://github.com/Heinrich-Faust">
+    <div class="footer-logo right-logo">
+        <img src="./Sources/amaya.png" alt="Logo Derecho">
+    </div>
+    </a>
+</footer>
+</html>
